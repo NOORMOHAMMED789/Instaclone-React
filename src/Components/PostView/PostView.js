@@ -5,7 +5,7 @@ import Header from "../Header/Header";
 const PostView = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000")
+    fetch("https://instaclone-backend-1ufi.onrender.com")
       .then((res) => res.json())
       .then((data) => {
         setPosts(data);
